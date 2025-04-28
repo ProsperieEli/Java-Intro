@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 /*
  With new lessons on Scanners and data types. I'm going to create a Mad Lib game in order to display the use of Scanners in a real scenario. 
