@@ -12,28 +12,16 @@ public class NumberGuessingGame {
 
         Random random = new Random();
         randomNumber = random.nextInt(min, max);
-        System.out.printf("Select a number between %d-%d: ", min, max);
+        System.out.printf("Select a number between %d-%d: \n", min, max);
         userGuess = scanner.nextInt();
 
-        do {
-            System.out.println("this is number" + randomNumber);
+        while (userGuess != randomNumber) {
+            System.out.println("the answer: " + randomNumber);
+            System.out.printf("%d is incorrect. Try again. \n", userGuess);
             userGuess = scanner.nextInt();
 
-            if (userGuess == randomNumber) {
-                System.out.println("Congrats! You win!");
-            } else if (userGuess < randomNumber) {
-                userGuess = scanner.nextInt();
-                System.out.println("Go a little higher!");
-
-            } else if (userGuess > randomNumber) {
-                userGuess = scanner.nextInt();
-
-                System.out.println("Too high! Back down");
-
-            }
-            scanner.close();
-        } while (userGuess != randomNumber);
-        System.out.println("Game over!");
+        }
+        System.out.println("Congrats! You win!");
 
     }
 }
