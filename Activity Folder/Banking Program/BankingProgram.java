@@ -5,9 +5,10 @@ public class BankingProgram {
 
     public static void main(String[] args) {
         Double depositedAmount;
+        Double withdrawnAmount;
         Double balance = 0.0;
         Integer choice;
-        Boolean cont;
+        Integer cont;
         Boolean activeBank = true;
 
         Scanner scanner = new Scanner(System.in);
@@ -29,19 +30,44 @@ public class BankingProgram {
                 depositedAmount = scanner.nextDouble();
                 depositMoney(balance, depositedAmount);
                 balance = depositMoney(balance, depositedAmount);
-                System.out.printf("Your new balance is %.2f\n", balance);
+                System.out.printf("Your new balance is $%,.2f\n", balance);
 
-                System.out.println("Would you like to make another deposit? (true/false)");
-                cont = scanner.nextBoolean();
-                while (cont) {
+                System.out.println("Would you like to make another deposit?\n1: Yes\n2. No");
+                cont = scanner.nextInt();
+                while (cont == 1) {
                     System.out.print("How much would you like to deposit? ");
                     depositedAmount = scanner.nextDouble();
                     depositMoney(balance, depositedAmount);
                     balance = depositMoney(balance, depositedAmount);
-                    System.out.printf("Your new balance is %.2f\n", balance);
+                    System.out.printf("Your new balance is $%,.2f\n", balance);
 
-                    System.out.println("Would you like to make another deposit? (true/false)");
-                    cont = scanner.nextBoolean();
+                    System.out.println("Would you like to make another deposit?\n1: Yes\n2. No");
+                    cont = scanner.nextInt();
+                }
+            }
+            if (choice == 3) {
+                if (balance == 0) {
+                    System.out.println("Sorry, you have no money with us to withdraw. Please add funds now.");
+                } else {
+
+                    System.out.print("How much would you like to withdraw? ");
+                    withdrawnAmount = scanner.nextDouble();
+                    withdrawMoney(balance, withdrawnAmount);
+                    balance = withdrawMoney(balance, withdrawnAmount);
+                    System.out.printf("Your new balance is $%,.2f\n", balance);
+
+                    System.out.println("Would you like to make another withdraw?\n1: Yes\n2. No");
+                    cont = scanner.nextInt();
+                    while (cont == 1) {
+                        System.out.print("How much would you like to withdraw? ");
+                        withdrawnAmount = scanner.nextDouble();
+                        withdrawMoney(balance, withdrawnAmount);
+                        balance = withdrawMoney(balance, withdrawnAmount);
+                        System.out.printf("Your new balance is $%,.2f\n", balance);
+
+                        System.out.println("Would you like to make another withdraw?\n1: Yes\n2. No");
+                        cont = scanner.nextInt();
+                    }
                 }
             }
             if (choice == 4) {
@@ -60,7 +86,9 @@ public class BankingProgram {
         return balance;
     }
 
-    static void withdrawMoney() {
+    static Double withdrawMoney(Double balance, Double withdrawnAmount) {
         //this method will hold data for withdrawing money from account.
+        balance -= withdrawnAmount;
+        return balance;
     }
 }
