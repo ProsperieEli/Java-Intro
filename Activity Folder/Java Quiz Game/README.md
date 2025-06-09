@@ -1,0 +1,2 @@
+# Java Quiz game.
+This activity will be a simple, five question quiz based on basic Java knowledge. The point of this activity is to help understand a basic comprehension of user input, prompts, and 2D arrays.
