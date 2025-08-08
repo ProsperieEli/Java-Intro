@@ -25,11 +25,15 @@ public class SlotMachine {
         System.out.println("Place your bet amount: ");
         bettingAmount = scanner.nextInt();
 
+        //emojis[0] = "🍒";
+        System.out.println(emojis[0]);
+
         while (gameRunning) {
             System.out.println("Spinning. . .");
             for (int i = 0; i <= emojis.length - 3; i++) {
                 spin = emojis[random.nextInt(5)];
-                System.out.print(spin + " " + "|");
+                System.out.print(spin + " " + "|" + " ");
+                System.out.println(spin.length() + "length");
             }
             gameRunning = false;
         }
