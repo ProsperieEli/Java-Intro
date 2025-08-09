@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "OOP",
+            "request": "launch",
+            "mainClass": "OOP",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "BankingProgram",
+            "request": "launch",
+            "mainClass": "BankingProgram",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Doggy",
+            "request": "launch",
+            "mainClass": "Doggy",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArrayIntro",
+            "request": "launch",
+            "mainClass": "ArrayIntro",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "ArrayWithInput",
+            "request": "launch",
+            "mainClass": "ArrayWithInput",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "DataTypes",
+            "request": "launch",
+            "mainClass": "DataTypes",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Driver",
+            "request": "launch",
+            "mainClass": "Driver",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "EnhancedSwitches",
+            "request": "launch",
+            "mainClass": "EnhancedSwitches",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "ForLoops",
+            "request": "launch",
+            "mainClass": "ForLoops",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Methods",
+            "request": "launch",
+            "mainClass": "Methods",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "MoreAdvancedMath",
+            "request": "launch",
+            "mainClass": "MoreAdvancedMath",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "NestedLoop",
+            "request": "launch",
+            "mainClass": "NestedLoop",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "PrintFMethod",
+            "request": "launch",
+            "mainClass": "PrintFMethod",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "RandomNumbers",
+            "request": "launch",
+            "mainClass": "RandomNumbers",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Scanners",
+            "request": "launch",
+            "mainClass": "Scanners",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "SearchArray",
+            "request": "launch",
+            "mainClass": "SearchArray",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "StringMethods",
+            "request": "launch",
+            "mainClass": "StringMethods",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Substring",
+            "request": "launch",
+            "mainClass": "Substring",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "TempConverter",
+            "request": "launch",
+            "mainClass": "TempConverter",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "WhileLoops",
+            "request": "launch",
+            "mainClass": "WhileLoops",
+            "projectName": "Java-Intro_c95e9147"
+        }
+    ]
+}
