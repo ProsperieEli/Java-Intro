@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ToStringOverriding",
+            "request": "launch",
+            "mainClass": "ToStringOverriding",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "Overridding",
             "request": "launch",
             "mainClass": "Overridding",
