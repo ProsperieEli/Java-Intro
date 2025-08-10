@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Overridding",
+            "request": "launch",
+            "mainClass": "Overridding",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "Override",
+            "request": "launch",
+            "mainClass": "Override",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "Super",
             "request": "launch",
             "mainClass": "Super",
