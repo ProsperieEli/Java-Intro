@@ -81,13 +81,13 @@ public class BankingProgram {
     }
 
     static Double depositMoney(Double balance, Double depositedAmount) {
-        //this method will hold data for depositing money into account.
+        // this method will hold data for depositing money into account.
         balance += depositedAmount;
         return balance;
     }
 
     static Double withdrawMoney(Double balance, Double withdrawnAmount) {
-        //this method will hold data for withdrawing money from account.
+        // this method will hold data for withdrawing money from account.
         balance -= withdrawnAmount;
         return balance;
     }
