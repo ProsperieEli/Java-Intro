@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InterfaceMain",
+            "request": "launch",
+            "mainClass": "InterfaceMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "Abstraction",
             "request": "launch",
             "mainClass": "Abstraction",
