@@ -4,6 +4,7 @@ public class OOP {
 
     public static void main(String[] args) {
         Console consoles = new Console();
+
         System.out.println(consoles.name);
         System.out.println(consoles.releaseYear);
 
@@ -12,6 +13,7 @@ public class OOP {
         //We can also access methods from the same class.
         consoles.hasGames = true;
         consoles.doesItHaveGames();
+
         consoles.hasGames = false;
         consoles.itDoesNotHaveGames();
         //Above we are calling our created method doesItHaveGames using dot notation. We are going into the Class Object and grabbing the method attached to that Object and calling it with the dot notation. 
