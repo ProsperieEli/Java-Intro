@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GetterAndSetterMain",
+            "request": "launch",
+            "mainClass": "GetterAndSetterMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "RuntimePolyMain",
             "request": "launch",
             "mainClass": "RuntimePolyMain",
