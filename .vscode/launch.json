@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RuntimePolyMain",
+            "request": "launch",
+            "mainClass": "RuntimePolyMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "PolyMain",
             "request": "launch",
             "mainClass": "PolyMain",
