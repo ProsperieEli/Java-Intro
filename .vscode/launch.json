@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AggregationMain",
+            "request": "launch",
+            "mainClass": "AggregationMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "GetterAndSetterMain",
             "request": "launch",
             "mainClass": "GetterAndSetterMain",
