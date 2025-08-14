@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WrapperMain",
+            "request": "launch",
+            "mainClass": "WrapperMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "CompositionMain",
             "request": "launch",
             "mainClass": "CompositionMain",
