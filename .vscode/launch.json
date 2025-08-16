@@ -6,10 +6,38 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CompoundInterest",
+            "name": "HandlingException",
             "request": "launch",
-            "mainClass": "CompoundInterest",
-            "projectName": "Java-Intro_c95e9147"
+            "mainClass": "HandlingException",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListMain",
+            "request": "launch",
+            "mainClass": "ArrayListMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
+            "name": "WrapperMain",
+            "request": "launch",
+            "mainClass": "WrapperMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
+            "name": "CompositionMain",
+            "request": "launch",
+            "mainClass": "CompositionMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
+            "name": "AggregationMain",
+            "request": "launch",
+            "mainClass": "AggregationMain",
+            "projectName": "Java Exercises_5afd2496"
         },
         {
             "type": "java",
