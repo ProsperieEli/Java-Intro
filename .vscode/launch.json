@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CompoundInterest",
+            "request": "launch",
+            "mainClass": "CompoundInterest",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "GetterAndSetterMain",
             "request": "launch",
             "mainClass": "GetterAndSetterMain",
