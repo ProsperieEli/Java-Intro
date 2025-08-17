@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FileWriterMain",
+            "request": "launch",
+            "mainClass": "FileWriterMain",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "HandlingException",
             "request": "launch",
             "mainClass": "HandlingException",
