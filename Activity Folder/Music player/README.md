@@ -2,8 +2,7 @@
 
 ## Basic Features:
 A user can:
-* Play a song
-* Pause a song.
+* Play/Pause a song
 * Skip a song.
 * Restart a song.
 * End the program. 
