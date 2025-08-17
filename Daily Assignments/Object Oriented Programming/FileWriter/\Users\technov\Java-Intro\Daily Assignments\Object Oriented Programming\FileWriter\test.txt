@@ -1,3 +1,0 @@
-This is a test txt file.
-Here, you can see that multiple lines are used because of the triple quotation marks.
-This is a simple lesson, but very useful.
