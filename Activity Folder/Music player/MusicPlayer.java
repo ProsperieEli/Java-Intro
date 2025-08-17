@@ -1,23 +1,53 @@
+
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class MusicPlayer {
+
     public static void main(String[] args) {
-        int userInput;
+        String userInput = "";
+        String filePath = "Activity Folder\\Music player\\Marino - Devil in Disguise (Lyrics).wav";
+        File file = new File(filePath);
 
-        MusicObj mp3 = new MusicObj("New Type of Hero", 2025,
-                "\\Users\\technov\\Downloads\\New Type of Hero (凸变英雄X动画原声带).mp3");
+        try (Scanner scanner = new Scanner(System.in); AudioInputStream audioInput = AudioSystem.getAudioInputStream(file)) {
+            Clip clip = AudioSystem.getClip();
 
-        System.out.print("Please enter 1 to play song: ");
-        Scanner scanner = new Scanner(System.in);
-        userInput = scanner.nextInt();
-        scanner.nextLine();
+            clip.open(audioInput);
 
-        if (userInput == 1) {
-            mp3.playMusic();
-        } else {
-            System.out.println("Error in code workflow.");
+            while (!userInput.equals("Q")) {
+                System.out.println("Press P for play");
+                System.out.println("Press S for stop");
+                System.out.println("Press R for reset");
+                System.out.println("Press Q for quit");
+
+                userInput = scanner.next().toUpperCase();
+
+                switch (userInput) {
+                    case "P" ->
+                        clip.start();
+                    case "S" ->
+                        clip.stop();
+                    case "R" ->
+                        clip.setMicrosecondPosition(0);
+                    case "Q" ->
+                        clip.close();
+
+                }
+            }
+        } catch (LineUnavailableException e) {
+            System.out.println("Issue with clip.");
+        } catch (IOException e) {
+            System.out.print("Type incorrect");
+        } catch (UnsupportedAudioFileException e) {
+            System.out.println("Unsupported audio type.");
         }
-        scanner.close();
+
     }
 
 }

@@ -9,6 +9,13 @@
             "name": "MusicPlayer",
             "request": "launch",
             "mainClass": "MusicPlayer",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
+            "name": "MusicPlayer",
+            "request": "launch",
+            "mainClass": "MusicPlayer",
             "projectName": "Java-Intro_c95e9147"
         },
         {
