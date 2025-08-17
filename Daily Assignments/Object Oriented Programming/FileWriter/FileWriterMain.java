@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -43,5 +45,38 @@ public class FileWriterMain {
         } catch (IOException e) {
             System.out.println("Incorrect type.");
         }
+
+        // Now that we have created the text file. What if we wanted to read it? Well,
+        // we can use the BufferedRender and FileReader.
+        /*
+         * BufferedRender and FileReader are great for reading multiple lines of txt
+         * files. The Buffered Render acts as a
+         * supporter for the FileReader, so it cannot act independently. Let's create a
+         * reader and go over it.
+         */
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+            String lines;
+            while ((lines = reader.readLine()) != null) {
+                System.out.println(lines);
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Double check pathway");
+        } catch (IOException e) {
+            System.out.println("Error. Incorrect type.");
+        }
     }
+    /*
+     * Perfect, it works! So let's just look through the code. We create a
+     * BufferedReader and FileReader object within a try/catch block.
+     * Once again, because file reading is dangerous code. We then pass in the
+     * fileName variable as the location for the FileReader object.
+     * We then create a variable of a String datatype. This variable is then used in
+     * a while loop. Where we state that the declared
+     * variable of lines is the reader.ReadLine() method. This attachs any string
+     * from our txt file to our lines variable.
+     * The != null portion is to tell our loop to stop running once all the text has
+     * been read. As the file will continue going but will
+     * just print null.
+     */
 }
