@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HangMan",
+            "request": "launch",
+            "mainClass": "HangMan",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "MusicPlayer",
             "request": "launch",
             "mainClass": "MusicPlayer",
