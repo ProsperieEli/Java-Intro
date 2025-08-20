@@ -9,8 +9,15 @@ import java.util.Scanner;
 
 public class HangMan {
 
+    public static String capitalize(String userChoice) {
+        String firstletter = userChoice.substring(0, 1).toUpperCase();
+        String remainingLetters = userChoice.substring(1);
+        return firstletter + remainingLetters;
+    }
+
     public static void main(String[] args) {
         int gameChoice;
+        boolean isAlive = true;
         String userChoice;
         String filePath = "C:\\Users\\Techno\\Java Exercises\\Activity Folder\\Hangman Game\\Hangman.txt";
         String textFile = """
@@ -38,7 +45,46 @@ public class HangMan {
             //System.out.print(textNames.get(gameChoice));
             for (int i = 0; i <= textNames.get(gameChoice).length(); i++) {
                 System.out.print(" _ ");
+
             }
+            System.out.print("\nGuess a letter: ");
+            System.out.println(textNames.get(gameChoice));
+            userChoice = scanner.nextLine();
+            System.out.print(userChoice);
+
+            while (isAlive) {
+
+                if (!textNames.get(gameChoice).contains(userChoice)) {
+
+                    System.out.println("You chose incorrect!");
+                    System.out.println(" O ");
+
+                    System.out.print("\nGuess a letter: ");
+                    System.out.println(textNames.get(gameChoice));
+                    userChoice = scanner.nextLine();
+                    System.out.print(userChoice);
+                    System.out.println(" O ");
+
+                    System.out.print("\nGuess a letter: ");
+                    System.out.println(textNames.get(gameChoice));
+                    userChoice = scanner.nextLine();
+                    System.out.print(userChoice);
+
+                    System.out.println(" / ");
+
+                    System.out.print("\nGuess a letter: ");
+                    System.out.println(textNames.get(gameChoice));
+                    userChoice = scanner.nextLine();
+                    System.out.print(userChoice);
+
+                    System.out.println(" / ");
+
+                    isAlive = false;
+                } else {
+                    System.out.println("Yes, this is in this word!");
+                }
+            }
+
         } catch (IOException e) {
             System.out.print("Error.");
         }
