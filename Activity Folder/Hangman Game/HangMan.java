@@ -19,6 +19,7 @@ public class HangMan {
         int gameChoice;
         boolean isAlive = true;
         String userChoice;
+        String replacedLetter;
         String filePath = "C:\\Users\\Techno\\Java Exercises\\Activity Folder\\Hangman Game\\Hangman.txt";
         String textFile = """
             Apple
@@ -50,39 +51,39 @@ public class HangMan {
             System.out.print("\nGuess a letter: ");
             System.out.println(textNames.get(gameChoice));
             userChoice = scanner.nextLine();
-            System.out.print(userChoice);
 
             while (isAlive) {
 
-                if (!textNames.get(gameChoice).contains(userChoice)) {
-
-                    System.out.println("You chose incorrect!");
-                    System.out.println(" O ");
-
-                    System.out.print("\nGuess a letter: ");
-                    System.out.println(textNames.get(gameChoice));
-                    userChoice = scanner.nextLine();
-                    System.out.print(userChoice);
-                    System.out.println(" O ");
-
-                    System.out.print("\nGuess a letter: ");
-                    System.out.println(textNames.get(gameChoice));
-                    userChoice = scanner.nextLine();
-                    System.out.print(userChoice);
-
-                    System.out.println(" / ");
-
-                    System.out.print("\nGuess a letter: ");
-                    System.out.println(textNames.get(gameChoice));
-                    userChoice = scanner.nextLine();
-                    System.out.print(userChoice);
-
-                    System.out.println(" / ");
-
+                if (textNames.get(gameChoice).contains(userChoice)) {
+                    System.out.println("Yes, this letter is in this word.");
+                    replacedLetter = textNames.get(gameChoice).replace(" _ ", userChoice);
+                    System.out.println(replacedLetter);
                     isAlive = false;
                 } else {
-                    System.out.println("Yes, this is in this word!");
+                    System.out.println("No, it is not.");
+                    isAlive = false;
                 }
+
+                // if (!textNames.get(gameChoice).contains(userChoice)) {
+                //     System.out.println("You chose incorrect!");
+                //     System.out.println(" O ");
+                //     System.out.print("\nGuess a letter: ");
+                //     userChoice = scanner.nextLine();
+                //     System.out.print(userChoice);
+                //     System.out.println(" O ");
+                //     System.out.print("\nGuess a letter: ");
+                //     userChoice = scanner.nextLine();
+                //     System.out.print(userChoice);
+                //     System.out.println(" / ");
+                //     System.out.print("\nGuess a letter: ");
+                //     userChoice = scanner.nextLine();
+                //     System.out.print(userChoice);
+                //     System.out.println(" / ");
+                //     isAlive = false;
+                // } else {
+                //     System.out.println("Yes, this is in this correct letter!");
+                //     isAlive = false;
+                // }
             }
 
         } catch (IOException e) {
