@@ -9,6 +9,13 @@
             "name": "HangMan",
             "request": "launch",
             "mainClass": "HangMan",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "HangMan",
+            "request": "launch",
+            "mainClass": "HangMan",
             "projectName": "Java Exercises_5afd2496"
         },
         {
