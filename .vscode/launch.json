@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GenericsMain",
+            "request": "launch",
+            "mainClass": "GenericsMain",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "Countdown",
             "request": "launch",
             "mainClass": "Countdown",
