@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MultiThreadingMain",
+            "request": "launch",
+            "mainClass": "MultiThreadingMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "ThreadingMain",
             "request": "launch",
             "mainClass": "ThreadingMain",

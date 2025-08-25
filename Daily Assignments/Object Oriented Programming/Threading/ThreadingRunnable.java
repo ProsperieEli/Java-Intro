@@ -2,7 +2,7 @@
 public class ThreadingRunnable implements Runnable {
 
     /*
-     * Let's start with this file. This file is where our threading is happening. We implement the Runnable operation and override the run() method. We then 
+     * Let's start with this file. This file is where our threading is happening. We implement the Runnable interface and override the run() method. We then 
      * impliment our counting logic and use the System.exit() method to close the program should the logic be met.
      */
     @Override

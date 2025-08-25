@@ -10,7 +10,7 @@ public class ThreadingMain {
      */
     public static void main(String[] args) {
         /*
-         * Here, we are creating our Thread class. We create our class of ThreadingRunnable and pass that in to the Thread object. We then use the setDaemon to 
+         * Here, we are creating our Thread object. We create our object of ThreadingRunnable and pass that in to the Thread object. We then use the setDaemon to 
          * close the program should the main thread(main file) complete. This means we have logic that will end the program if the timer runs out or if user enters a name beforehand.
          */
         ThreadingRunnable threadingRunnable = new ThreadingRunnable();
