@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EnumsMain",
+            "request": "launch",
+            "mainClass": "EnumsMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "HashMapsMain",
             "request": "launch",
             "mainClass": "HashMapsMain",
