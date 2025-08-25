@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashMapsMain",
+            "request": "launch",
+            "mainClass": "HashMapsMain",
+            "projectName": "Java Exercises_5afd2496"
+        },
+        {
+            "type": "java",
             "name": "GenericsMain",
             "request": "launch",
             "mainClass": "GenericsMain",
