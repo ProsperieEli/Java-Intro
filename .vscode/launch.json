@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClockThread",
+            "request": "launch",
+            "mainClass": "ClockThread",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "AlarmClockMain",
+            "request": "launch",
+            "mainClass": "AlarmClockMain",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
             "name": "MultiThreadingMain",
             "request": "launch",
             "mainClass": "MultiThreadingMain",
