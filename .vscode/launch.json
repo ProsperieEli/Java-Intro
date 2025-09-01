@@ -6,10 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "AlarmClock",
+            "name": "ClockThread",
             "request": "launch",
-            "mainClass": "AlarmClock",
-            "projectName": "Java Exercises_5afd2496"
+            "mainClass": "ClockThread",
+            "projectName": "Java-Intro_c95e9147"
+        },
+        {
+            "type": "java",
+            "name": "AlarmClockMain",
+            "request": "launch",
+            "mainClass": "AlarmClockMain",
+            "projectName": "Java-Intro_c95e9147"
         },
         {
             "type": "java",
